@@ -57,9 +57,6 @@ The final section of this project is to create a travel itinerary map. After the
 
 ![vacation_itinerary](https://github.com/eric-blankinshp/World_Weather_Analysis/blob/main/Vacation_Itenerary/WeatherPy_travel_map.png)
 
-Finally, the four separate destination DataFrames are combined into a single itinerary DataFrame using the Pandas .concat() function. The ending result is seen in the figure below.
-
-![itinerary_markers](https://github.com/eric-blankinshp/World_Weather_Analysis/blob/main/Vacation_Itenerary/WeatherPy_travel_map_markers.png)
 
 ## Creating a Travel Itinerary  
 The final section of this project is to create a travel itinerary map. After the user selects four destinations, a vacation itinerary route is created with the starting and ending cities being the same location. The three other destinations are refferred to as "stop1", "stop2", and "stop3." Using the Pandas .loc[] method on the new DataFrame with hotel data, individual DataFrames are created for each of the destinations. Latitude-Longitude pairs are obtained from each destination DataFrame using the to_numpy function. Using these coordinate pairs with the Google Directions API, a driving route is created for the vacation itinerary as seen below.
